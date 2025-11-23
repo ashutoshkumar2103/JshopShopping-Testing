@@ -63,6 +63,7 @@ ___
 
 Project Author: Ashutosh Kumar
 Role: Test Engineer
+
 ********
 ________
 
@@ -76,26 +77,26 @@ The JSpider Shopping Platform is a Java based e-commerce platform built using th
 ___
 
 ▶ Languages and Frameworks:
-­1. Primary Language: Java
-2. ­Frameworks: Hibernate, Spring Boot
-­3. Database: MySQL
+1. Primary Language: Java
+2. Frameworks: Hibernate, Spring Boot
+3. Database: MySQL
 ___
 
 ▶ Installation:
 Before running the JSpider Shopping Platform, ensure you have the following prerequisites installed:
-1. ­Eclipse and STS (Spring Tool Suite) for Spring Boot development. (https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-09/R/eclipse-inst-jre-win64.exe) and (https://spring.io/tools)
-­2. MySQL for database support. (https://dev.mysql.com/downloads/installer/)
-­3. Postman for API calls (https://www.postman.com/downloads/)
+1. Eclipse and STS (Spring Tool Suite) for Spring Boot development. (https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-09/R/eclipse-inst-jre-win64.exe) and (https://spring.io/tools)
+2. MySQL for database support. (https://dev.mysql.com/downloads/installer/)
+3. Postman for API calls (https://www.postman.com/downloads/)
 ___
 
 ▶ Dependencies:
 To run the project successfully, make sure you have the following dependencies added to your project:
-­1. Lombok (https://projectlombok.org/)
-­2. Spring Boot Dev Tools
-­3. MySQL Driver
-­4. Spring Data JPA
-­5. Spring Web
-­6. H2 Database (for development and testing)
+1. Lombok (https://projectlombok.org/)
+2. Spring Boot Dev Tools
+3. MySQL Driver
+4. Spring Data JPA
+5. Spring Web
+6. H2 Database (for development and testing)
 ___
 
 ▶ Usage:
