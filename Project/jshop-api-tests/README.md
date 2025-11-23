@@ -19,4 +19,4 @@ Detected endpoints (from your backend):
 - PUT   /user/updateUser  (body: User)
 
 Import this folder into Eclipse as an Existing Maven Project and run testng.xml.
-Adjust payload fields and endpoints if tests return 400/500 — send logs, I will patch.
+Adjust payload fields and endpoints if tests return 400/500 - send logs, I will patch.
