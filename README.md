@@ -4,6 +4,7 @@ JShop API Automation Testing Project
 
 The JShop API Testing Project is an automated backend testing framework designed to validate the REST APIs of the JShop Shopping Platform. The framework is built using Java, TestNG, and Rest Assured, focusing on functional validation of core e-commerce flows such as authentication, product operations, cart actions, and order processing.
 The goal of this testing project is to ensure that all backend endpoints behave as expected, return valid HTTP responses, handle errors gracefully, and maintain data integrity.
+_____
 
 ▶ Testing Scope Includes:
 
