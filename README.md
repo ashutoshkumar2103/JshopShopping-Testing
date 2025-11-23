@@ -64,12 +64,11 @@ ___
 Project Author: Ashutosh Kumar
 Role: Test Engineer
 ********
-***________***
+________
 
 # JSpider Shopping Platform
 
 ▶ Project Description:
-
 The JSpider Shopping Platform is a Java based e-commerce platform built using the Hibernate and Spring Boot frameworks, using MySQL as the back-end database. This is designed with three main user roles: Admin, Product Owner, and User.
 1. Admin: Admin has the responsibility to verify products added by Product Owners and manage user and product owner sign ups. Users and Product owners can access the platform only after verification is done.
 2. Product Owner: Product Owners has the authority to add new products, view all purchases made by users, and also update product details if needed.
