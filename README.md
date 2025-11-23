@@ -46,8 +46,8 @@ Make sure the following dependencies are present in the pom.xml:
 
 1. Rest Assured
 2. TestNG
-3. Gson / JSON path (optional)
-4. Maven Surefire Plugin
+3. JSON path
+4. Maven plugins
 ___
 
 ▶ Usage Instructions (How to Run):
