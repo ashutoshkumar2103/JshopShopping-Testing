@@ -1,0 +1,44 @@
+package com.jshop.apitests;
+
+import io.restassured.http.ContentType;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+public class ProductOwnerControllerTest extends AppTest {
+
+    @Test(groups = {"regression","api"})
+    public void saveProductOwner_mappedTest() {
+
+    	String payload = "{" + "\"ownername\":\"owner_name\"," + "\"owneremail\":\"owner@example.com\"," + "\"ownerpassword\":\"P@ssw0rd\"," + "\"admin\": {\"adminId\": 1}" + "}";
+    	
+        given()
+            .contentType(ContentType.JSON)
+            .body(payload)
+        .when()
+            .post("/productOwner/saveProductOwner")
+        .then()
+            .statusCode(anyOf(is(200), is(201)));
+    }
+
+    @Test(groups = {"regression","api"})
+    public void loginWithOwner_mappedTest() {
+        given()
+        .when()
+            .get("/productOwner/loginWithOwner/owner@example.com/test123")
+        .then()
+            .statusCode(anyOf(is(200), is(404), is(401)));
+    }
+
+    @Test(groups = {"regression","api"})
+    public void updateProductOwner_mappedTest() {
+        String payload = "{" + "\"ownername\":\"owner_name\"," + "\"ownerpassword\":\"Password@2222\"" + " "}";
+        given()
+            .contentType(ContentType.JSON)
+            .body(payload)
+        .when()
+            .put("/productOwner/updateProductOwner")
+        .then()
+            .statusCode(anyOf(is(200), is(204)));
+    }
+}

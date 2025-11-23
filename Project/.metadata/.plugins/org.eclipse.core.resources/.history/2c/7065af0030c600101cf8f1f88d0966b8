@@ -1,0 +1,13 @@
+package com.jshop.apitests;
+
+import org.testng.*;
+
+import static org.testng.
+
+public class AppTest {
+    
+  @Test
+  public void shouldAnswerWithTrue() {
+    assertTrue(true);
+  }
+}

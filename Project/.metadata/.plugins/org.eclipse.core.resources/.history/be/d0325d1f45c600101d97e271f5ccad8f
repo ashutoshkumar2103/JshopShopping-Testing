@@ -1,0 +1,42 @@
+package com.jshop.apitests;
+
+import io.restassured.http.ContentType;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+public class UserControllerTest extends AppTest {
+
+    @Test(groups = {"regression","api"})
+    public void saveUserDetails_mappedTest() {
+        String payload = "{\"userName\":\"sample_user\",\"userEmail\":\"user@example.com\",\"password\":\"P@ssw0rd\",\"userPhone\":\"\"}";
+        given()
+            .contentType(ContentType.JSON)
+            .body(payload)
+        .when()
+            .post("/user/saveUserDetails")
+        .then()
+            .statusCode(anyOf(is(200), is(201)));
+    }
+
+    @Test(groups = {"regression","api"})
+    public void loginUser_mappedTest() {
+        given()
+        .when()
+            .get("/user/loginUser/user@example.com/test123")
+        .then()
+            .statusCode(anyOf(is(200), is(404), is(401)));
+    }
+
+    @Test(groups = {"regression","api"})
+    public void updateUser_mappedTest() {
+        String payload = "{\"id\":1,\"name\":\"updated_user\"}";
+        given()
+            .contentType(ContentType.JSON)
+            .body(payload)
+        .when()
+            .put("/user/updateUser")
+        .then()
+            .statusCode(anyOf(is(200), is(204)));
+    }
+}

@@ -1,0 +1,18 @@
+package com.jshop.apitests;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+public class UserCartControllerTest extends AppTest {
+
+    @Test(groups = {"regression","api"})
+    public void userCartInsert_mappedTest() {
+        // path variables: productQuantity, productId
+        given()
+        .when()
+            .post("/userCart/userCartInsert/1/1")
+        .then()
+            .statusCode(anyOf(is(200), is(201), is(400)));
+    }
+}

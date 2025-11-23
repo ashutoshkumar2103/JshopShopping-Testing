@@ -1,0 +1,18 @@
+package com.jshop.apitests;
+
+import org.testng.annotations.BeforeClass;
+//import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+
+public class AppTest {
+    
+	 protected String basePath = System.getProperty("base.path", "/");
+	    @BeforeClass
+	    public void setup() {
+	        String baseUri = System.getProperty("base.uri", "http://localhost");
+	        String port = System.getProperty("base.port", "8080");
+	        RestAssured.baseURI = baseUri;
+	        RestAssured.port = Integer.parseInt(port);
+	        RestAssured.basePath = basePath;
+	    }
+}

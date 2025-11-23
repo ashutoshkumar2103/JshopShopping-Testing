@@ -1,0 +1,19 @@
+package com.jshop.apitests;
+
+import io.restassured.http.ContentType;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+public class OrderControllerTest extends AppTest {
+
+    @Test(groups = {"regression","api"})
+    public void productOrder_mappedTest() {
+        // This endpoint uses path variables: productId, quantity, address
+        given()
+        .when()
+            .put("/order/productOrder/1/1/AddressSample")
+        .then()
+            .statusCode(anyOf(is(200), is(201), is(400)));
+    }
+}

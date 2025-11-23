@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="JShop API Suite" verbose="1" parallel="false">
+  <test name="API Tests">
+    <groups>
+      <run>
+        <include name="regression"/>
+        <include name="api"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.jshop.api.AdminControllerTest"/>
+      <class name="com.jshop.api.AdminControllerTest"/>
+      <class name="com.jshop.api.ProductControllerTest"/>
+      <class name="com.jshop.api.OrderControllerTest"/>
+      <class name="com.jshop.api.ProductOwnerControllerTest"/>
+      <class name="com.jshop.api.UserCartControllerTest"/>
+      <class name="com.jshop.api.UserControllerTest"/>
+    </classes>
+  </test>
+</suite>
