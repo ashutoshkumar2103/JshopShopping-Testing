@@ -1,4 +1,4 @@
-JShop API Automation Testing Project
+# JShop API Automation Testing Project
 
 ▶ Project Description:
 
