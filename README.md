@@ -19,32 +19,36 @@ _____
 
 4. Order / Checkout Flow
 - Place order, validate order response, negative invalid order attempts.
+___
 
 ▶ Languages, Tools & Frameworks Used:
 
-Language: Java
-Framework: TestNG
-API Library: Rest Assured
-Build Tool: Maven
-Test Reporting: Surefire Reports (Default)
+1. Language: Java
+2. Framework: TestNG
+3. API Library: Rest Assured
+4. Build Tool: Maven
+5. Test Reporting: Surefire Reports (Default)
+___
 
 ▶ Installation Requirements:
 
 Before running the automation suite, ensure the following tools are installed:
 
-Java JDK (latest recommended version)
-Maven
-IDE (Eclipse, IntelliJ IDEA, or VS Code)
-Backend server running locally (http://localhost:8080)
+1. Java JDK (latest recommended version)
+2. Maven
+3. IDE (Eclipse, IntelliJ IDEA, or VS Code)
+4. Backend server running locally (http://localhost:8080)
+___
 
 ▶ Project Dependencies:
 
 Make sure the following dependencies are present in the pom.xml:
 
-Rest Assured
-TestNG
-Gson / JSON path (optional)
-Maven Surefire Plugin
+1. Rest Assured
+2. TestNG
+3. Gson / JSON path (optional)
+4. Maven Surefire Plugin
+___
 
 ▶ Usage Instructions (How to Run):
 
@@ -53,10 +57,12 @@ Open the project in your preferred IDE.
 Ensure the backend application (JShop Spring Boot App) is already running.
 
 Run tests using testNG Suite
+___
 
 ▶ Maintainer of the Project:
 
 Project Author: Ashutosh Kumar
 Role: Test Engineer
+********
 
-Note: Backend part is also written by me.
+**Note: Backend part is also written by me.**
